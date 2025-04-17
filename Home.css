@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #a00;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo img {
+    height: 50px;
+    vertical-align: middle;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header .user-info {
+    text-align: right;
+}
+
+.main-nav {
+    background-color: #800;
+    color: white;
+    padding: 10px;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.main-nav ul li {
+    margin-right: 15px;
+}
+
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.dashboard {
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #eee;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: #a00;
+    text-decoration: none;
+}
+
+.content {
+    width: 80%;
+    padding: 20px;
+}
+
+.kejuaraan-section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.kejuaraan-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.kejuaraan-section table th,
+.kejuaraan-section table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.kejuaraan-section table th {
+    background-color: #a00;
+    color: white;
+}
+
+.dibuka {
+    color: green;
+    font-weight: bold;
+}
+
+.stats-section {
+    margin-bottom: 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+}
+
+.stat-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    width: 30%;
+}
+
+.newsletter-section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.newsletter-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.newsletter-section table th,
+.newsletter-section table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.newsletter-section table th {
+    background-color: #a00;
+    color: white;
+}
+
+footer {
+    background-color: #a00;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

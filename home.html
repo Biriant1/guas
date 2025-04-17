@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PBSI Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #a00;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header .logo img {
+            height: 50px;
+            vertical-align: middle;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header .user-info {
+            text-align: right;
+        }
+
+        nav {
+            background-color: #800;
+            color: white;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .dashboard {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 20%;
+            background-color: #eee;
+            padding: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            color: #a00;
+            text-decoration: none;
+        }
+
+        .content {
+            width: 80%;
+            padding: 20px;
+        }
+
+        .kejuaraan-section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .kejuaraan-section table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .kejuaraan-section table th,
+        .kejuaraan-section table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        .kejuaraan-section table th {
+            background-color: #a00;
+            color: white;
+        }
+
+        .dibuka {
+            color: green;
+            font-weight: bold;
+        }
+
+        .stats-section {
+            margin-bottom: 20px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .stat-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            width: 30%;
+        }
+
+        .newsletter-section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .newsletter-section table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .newsletter-section table th,
+        .newsletter-section table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        .newsletter-section table th {
+            background-color: #a00;
+            color: white;
+        }
+
+        footer {
+            background-color: #a00;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="brahrang.png" alt="PBSI Logo">
+            <h1>Pb. Brahrang - Persatuan Bulutangkis Brahrang</h1>
+        </div>
+        <div class="user-info">
+            <p>Kamis, 26 Sep 2024 09:33</p>
+            <p>PB Brahang, Pb_Brahang</p>
+        </div>
+    </header>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Management Data PBSI</a></li>
+            <li><a href="#">Referensi</a></li>
+            <li><a href="#">Kejuaraan</a></li>
+        </ul>
+    </nav>
+
+    <div class="dashboard">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#">Pengkab/Pengkot</a></li>
+                <li><a href="#">Pengurus</a></li>
+                <li><a href="#">Klub</a></li>
+                <li><a href="#">Atlet</a></li>
+                <li><a href="#">Kejuaraan</a></li>
+                <li><a href="#">Ranking</a></li>
+                <li><a href="#">Berita</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <section class="kejuaraan-section">
+                <h2>Kejuaraan</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Tanggal</th>
+                            <th>Kejuaraan</th>
+                            <th>Provinsi</th>
+                            <th>Kota</th>
+                            <th>Status</th>
+                            <th>Detail</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>5/10/24 - 06/10/24</td>
+                            <td>Selekkot 2024</td>
+                            <td>sumut</td>
+                            <td>Pengkot Binjai</td>
+                            <td><span class="dibuka">DIBUKA</span></td>
+                            <td><a href="#">Detail</a></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>24/10/24 - 27/10/24</td>
+                            <td>KEJURKOT PBSI Jakarta Utara Tahun 2024</td>
+                            <td>DKI Jakarta</td>
+                            <td>Pengkot Jakarta Utara</td>
+                            <td><span class="dibuka">DIBUKA</span></td>
+                            <td><a href="#">Detail</a></td>
+                        </tr>
+                        <!-- Add more rows similarly -->
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="stats-section">
+                <div class="stats">
+                    <div class="stat-item">Pengkab/kot: 377</div>
+                    <div class="stat-item">Klub Aktif: 4,301</div>
+                    <div class="stat-item">Atlet Aktif: 79,174</div>
+                </div>
+            </section>
+
+            <section class="newsletter-section">
+                <h2>Newsletter</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Tanggal</th>
+                            <th>Pengirim</th>
+                            <th>Judul</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>-</td>
+                            <td>hapso</td>
+                            <td>KETENTUAN KEJUARAAN SWASTA NASIONAL - BANDA BARU LI-NING BADMINTON CHAMPIONSHIPS 2024 KEPULAUAN RIAU</td>
+                        </tr>
+                        <!-- Add more rows similarly -->
+                    </tbody>
+                </table>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Persatuan Bulutangkis Seluruh Indonesia</p>
+    </footer>
+</body>
+</html>
